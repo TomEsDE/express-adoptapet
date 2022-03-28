@@ -1,6 +1,7 @@
 import express from 'express';
 import http from 'http';
 import { routes } from './routes/adopt';
+import { animals } from './routes/animals';
 import dotenv from 'dotenv';
 
 if (process.env.NODE_ENV !== 'production') {
@@ -36,6 +37,7 @@ app.use((req, res, next) => {
 
 /** Routes */
 app.use('/', routes);
+app.use('/animals', animals);
 
 /** images & co */
 app.use(express.static('public'));
