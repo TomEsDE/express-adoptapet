@@ -4,7 +4,7 @@ import recipeController from '../controller/adopt';
 const routes = express.Router();
 
 /* ###### RECIPE */
-routes.get('/', () => console.log('hello'));
+routes.get('/', () => console.log('hi'));
 // routes.get('/recipe/:id', recipeController.getRecipe);
 // routes.get('/search/query=:query&flag=:flag', recipeController.searchRecipe);
 // routes.post('/recipe', recipeController.createRecipe);
